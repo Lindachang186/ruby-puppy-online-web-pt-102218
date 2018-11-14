@@ -1,4 +1,3 @@
-require "pry"
 
 class Dog
   @@all = []
@@ -11,10 +10,7 @@ class Dog
   end
 
 def self.all
-  @@all.map do |dog|
-    binding.pry
-    dog.split("")
-  end
+  Dog.name
 end
 
 def self.clear_all
