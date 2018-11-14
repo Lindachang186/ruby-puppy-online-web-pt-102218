@@ -11,7 +11,7 @@ class Dog
 
 def self.all
   @@all.each do |dog|
-    if dog.include?("")
+    if dog.include?(@name)
       puts "#{dog}"
     end
   end
