@@ -1,3 +1,4 @@
+require "pry"
 
 class Dog
   @@all = []
@@ -12,7 +13,7 @@ class Dog
 def self.all
   @@all.each do |dog|
     dog.split("")
-    pry
+    binding.pry
   end
 end
 
