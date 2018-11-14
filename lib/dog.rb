@@ -10,7 +10,11 @@ class Dog
   end
 
 def self.all
-  @@all
+  @@all.each do |dog|
+    if dog.include?("")
+      puts "#{dog}"
+    end
+  end
 end
 
 def self.clear_all
