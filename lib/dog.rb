@@ -11,7 +11,7 @@ class Dog
   end
 
 def self.all
-  @@all.each do |dog|
+  @@all.map do |dog|
     dog.split("")
     binding.pry
   end
