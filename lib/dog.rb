@@ -11,9 +11,8 @@ class Dog
 
 def self.all
   @@all.each do |dog|
-    if dog.include?(@name)
-      puts "#{dog}"
-    end
+    dog.split("")
+    pry
   end
 end
 
